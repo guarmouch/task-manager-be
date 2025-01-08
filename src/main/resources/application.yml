@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: local  # Specifies which profile to load, in this case "local"
+server:
+  #  port: 8080
+  #  forward-headers-strategy: native
+  servlet:
+    context-path: /api
