@@ -63,9 +63,4 @@ public class TaskService {
         return taskRepository.findAll().stream()
                 .anyMatch(task -> task.getStatus().equals("Pending"));
     }
-    public List<Task> getTasksByPriorityAndStatus(String priority, String status) {
-        return taskRepository.findAll().stream()
-                .filter(task -> task.getPriority().equals(priority) && task.getStatus().equals(status))
-                .collect(Collectors.toList());
-    }
 }
